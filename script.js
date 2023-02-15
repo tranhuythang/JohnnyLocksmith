@@ -70,7 +70,8 @@ function signInOut() {
 }
 
 function generateHeader(tab) {
-    console.log("start loading page: cookie = " + getCookie("JohnnyLocksmith_email"));
+    document.title = "Johnny Locksmith in Arizona";
+    
     let header = document.createElement("header");
     header.innerHTML = ' \
     <header> \
@@ -100,5 +101,28 @@ function generateHeader(tab) {
     }
 
     document.getElementById(tab).style.color = "red";
+}
+
+function checkCarKeyPrice() {
+    let manufacturer = document.getElementById("Manufacturer").value;
+    let model = document.getElementById("Model").value;
+    let year = document.getElementById("Year").value;
+    if (manufacturer == "" || model == "" || year == "") {
+        alert("You have to fill in all 3 fields: Manufacturer - Model - Year");
+    } else {
+        document.getElementById("CarDescription").innerHTML = manufacturer + " " + model + " " + year + ": ";
+        document.getElementById("CarKeyPrice").innerHTML = "$" + (70 + Math.floor(Math.random() * 100));
+    }
+    
+}
+
+function estimateTimeArrival() {
+    let address = document.getElementById("address").value;
+    if (address.trim() == "") {
+        alert("You have to fill in a address");
+    } else {
+        document.getElementById("addressDesc").innerHTML = "We will get to <strong> " + address + "</strong> in ";
+        document.getElementById("eta").innerHTML = (150 + Math.floor(Math.random() * 100)) + " minutes";
+    }
 }
 

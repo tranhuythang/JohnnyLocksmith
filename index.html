@@ -13,42 +13,51 @@
     <script>generateHeader("homeTab")</script>
 
     <article>
-        <aside>           
-            <section>
-                <form>
-                    <fieldset>
-                        <legend>Car key search</legend>
-                        <select name="Manufacturer">
-                            <option value="" selected>--Manufacturer--</option>
-                            <option value="volvo">Honda</option>
-                            <option value="saab">Toyota</option>
-                            <option value="mercedes">Ford</option>
-                            <option value="audi">Audi</option>
-                        </select>
-                        <br>
+        <aside>
+            <h4>Our availability</h4>
+            <form>
+                <fieldset>
+                    <legend>Clone Car Key</legend>
+                    <select id="Manufacturer" name="Manufacturer">
+                        <option value="" selected>--Manufacturer--</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Kia">Kia</option>
+                    </select>
+                    <br>
 
-                        <select name="Model">
-                            <option value="" selected>--Model--</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                        </select>
-                        <br>
+                    <select id="Model" name="Model">
+                        <option value="" selected>--Model--</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Camry">Camry</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Pirus">Pirus</option>
+                    </select>
+                    <br>
 
-                        <select name="Year">
-                            <option value="" selected>--Year--</option>
-                            <option value="volvo">2022</option>
-                            <option value="saab">2021</option>
-                            <option value="mercedes">2020</option>
-                            <option value="audi">2019</option>
-                        </select>
-                        <br>
-                        <input type="submit" value="Search">
+                    <select id="Year" name="Year">
+                        <option value="" selected>--Year--</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <br>
+                    <input type="button" onClick="checkCarKeyPrice()" value="Get Price (randomly)">
+                    <div><span id="CarDescription"></span><span id="CarKeyPrice" style="color: blue"></span></div>
 
-                    </fieldset>
-                </form>
-            </section>
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend>Unlock Car/Door</legend>
+                    Your address:
+                    <input id="address" type="text" name="address">
+                    <input type="button" onClick="estimateTimeArrival()" value="Estimate Arrival (randomly)">
+                    <div><span id="addressDesc"></span><span id="eta" style="color: blue"></span></div>
+                </fieldset>
+            </form>
         </aside>
         <main>
             <ul> 
