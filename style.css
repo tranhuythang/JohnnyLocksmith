@@ -1,6 +1,7 @@
 article, .service {
     display: flex;
 }
+
 .service_img {
     width: 70px;
     height: 100px;
@@ -13,4 +14,12 @@ article, .service {
 
 table, th, td {
     border: 1px solid black;
-  }
+}
+
+nav {
+    background-color: black; color: white; padding-top: 10px; padding-bottom: 10px;
+}
+
+.navTab {
+    text-decoration: none; color: white
+}
