@@ -1,0 +1,16 @@
+article, .service {
+    display: flex;
+}
+.service_img {
+    width: 70px;
+    height: 100px;
+    margin: 20px;
+}
+.overall_rate {
+    width: 250px;
+    height: 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }

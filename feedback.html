@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>generateHeader("feedbackTab")</script>
+
+    <main> 
+        <section>
+            <h4>Review</h4>
+            <form action=""> 
+                You rate our service: 
+                <select name="rate"> 
+                    <option value="" selected>--rate--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select> &#9734;
+                <br>
+                Your comments:
+                <textarea name="review" rows="10" cols="100"></textarea>
+                <input type="submit" value="Submit Review">
+            </form>            
+        </section>
+        
+        <section>
+            <h4>Contact us</h4>
+            <form action=""> 
+                <br>
+                Your message to us:
+                <textarea name="review" rows="10" cols="100"></textarea>
+                <input type="submit" value="Send Message">
+            </form>            
+        </section>
+        
+        <section>
+        </section>
+    </main>
+
+    <script>generateFooter();</script>
+</body>
+</html>

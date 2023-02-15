@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>generateHeader("homeTab")</script>
+
+    <article>
+        <aside>
+            <section>
+                <form action="">
+                    <fieldset>
+                        <legend>Sign In/Up</legend>
+                        <label>Email: <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></label>
+                        <label>Password: <input type="password" name="password"></label>
+                        <br>
+                        <input type="submit">
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Car key search</legend>
+                        <select name="Manufacturer">
+                            <option value="" selected>--Manufacturer--</option>
+                            <option value="volvo">Honda</option>
+                            <option value="saab">Toyota</option>
+                            <option value="mercedes">Ford</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <br>
+
+                        <select name="Model">
+                            <option value="" selected>--Model--</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <br>
+
+                        <select name="Year">
+                            <option value="" selected>--Year--</option>
+                            <option value="volvo">2022</option>
+                            <option value="saab">2021</option>
+                            <option value="mercedes">2020</option>
+                            <option value="audi">2019</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Search">
+
+                    </fieldset>
+                </form>
+            </section>
+        </aside>
+        <main>
+            <ul> 
+                <p> Contact Johnny Locksmith if you live in or around Phoenix, Arizona, and want the best and most complete locksmith services for your business, car, or home.</p>
+                <li class="service">
+                    <img class="service_img" src="service_lockout.webp" alt="">
+                    <p class="service_desc"><strong>Emergency Lockout service:</strong> As a local locksmith with many emergency lockouts in our reputation, we know the area very well, so we can come to your location in the quickest time possible. Since you contacted us, our average arrival time has been about 25 minutes, and you can be confident and stress-free because of our professional service and reasonable prices. We understand how stressful it is to be locked out of your car or home or even to lose your car key, and we make sure to get to you as soon as possible and to provide honest service at fast and reasonable prices. Our emergency service is available 24 hours a day, seven days a week, and you can reach us at 480-779-9144 at any time. </p>
+                </li>
+                <li class="service">
+                    <img class="service_img" src="service_business.jpg" alt="">
+                    <p class="service_desc"><strong>Business Locksmith service:</strong> We do a lot of work with locks and keys for businesses and factories. We offer full locksmith services for both small and large businesses, and we do it all under one roof, making sure to fit your budget and security needs. You can rest easy knowing that we guarantee 100% customer satisfaction and provide excellent customer service 24 hours a day.</p>
+                </li>
+                <li class="service">
+                    <img class="service_img" src="service_home.jpg" alt="">
+                    <p class="service_desc"><strong>Home Locksmith service:</strong> As Phoenix's best residential locksmith, we know what you want most when you call a locksmith. Johnny Locksmith comes quickly and only hires the most skilled, licensed, and enthusiastic professionals. In everything we do, customer service is important. If you're not happy with everything, neither are we. Don't wait until a problem comes up. Make sure that your locks are secure and that your valuables are safe. We put in the best locks so that you can get a good night's sleep. Too many people wait until it's too late to do anything before they act. They are broken into. If you think your home has been broken into, it's a terrible time to think that. We recommend that you change your lock keys every 3–5 years, and in case you lose your keys, rekey them immediately.</p>
+                </li>
+                <li class="service">
+                    <img class="service_img" src="service_car.jpeg" alt="">
+                    <p class="service_desc"><strong>Car Locksmith service:</strong> We have worked on many different kinds of cars over the years, so we know everything there is to know about locksmith services for cars. We can easily say that after making thousands of car keys, we are one of the most recognized key companies in Arizona and can do many things that others cannot. Once you contact us, we will immediately dispatch specialists that are experienced with your vehicle to provide the necessary help. Smart key replacement includes the 2022 model and ignition repair; we handle it all.</p>
+                </li>            
+            </ul>
+        </main>
+        <aside>
+            <section><img class="overall_rate" src="overall_rate.png" alt=""></section>
+            <section>
+                <ul>
+                    Customer's review
+                    <li>
+                        <span class="review_rate">4 &#9734;</span> <span class="review_person">Peter, </span> <span class="review_date">Feb 03, 2023 </span>
+                        <p>Opened my car door in less than 5 min</p>
+                    </li>
+                    <li>
+                        <span class="review_rate">5 &#9734;</span> <span class="review_person">Sam, </span> <span class="review_date">Jan 01, 2023 </span>
+                        <p>They are really fast,they got my car open quick and where berry polite 5</p>
+                    </li>
+                    <li>
+                        <span class="review_rate">3 &#9734;</span> <span class="review_person">Tom, </span> <span class="review_date">Dec 10, 2022 </span>
+                        <p>Elroi was great. If you need your open request him!</p>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+    </article>   
+
+    <script>generateFooter();</script>
+</body>
+</html>

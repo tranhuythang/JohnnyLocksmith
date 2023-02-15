@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny Locksmith in Arizona</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- <header>
+        <h1>Johnny Locksmith in Arizona</h1>
+        <nav style="background-color: black; padding-top: 10px; padding-bottom: 10px; text-align: center;">
+            <a id="homeTab" href="index.html" style="color: white">Home</a>
+            <a id="orderTab" href="order.html" style="color: white">Order</a>
+            <a id="feedbackTab" href="feedback.html" style="color: white">Feedback</a>
+        </nav>
+    </header> -->
+
+    <script>generateHeader("orderTab")</script>
+
+    <main> 
+        <section>
+            <h3>Place a NEW order</h3>
+            <fieldset>
+                <legend><input type="checkbox" name="service1" value="unlock">Unlock</legend>
+                <label>Address: <input type="text" name="address"></label>
+                <label>Type of lock: <input type="text" name="address"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend><input type="checkbox" name="service2" value="carkey">Make copies of a Car key</legend>
+                <label for="">Car </label>
+
+                <select name="Manufacturer">
+                    <option value="" selected>--Manufacturer--</option>
+                    <option value="volvo">Honda</option>
+                    <option value="saab">Toyota</option>
+                    <option value="mercedes">Ford</option>
+                    <option value="audi">Audi</option>
+                </select>
+                
+                <select name="Model">
+                    <option value="" selected>--Model--</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+                
+
+                <select name="Year">
+                    <option value="" selected>--Year--</option>
+                    <option value="volvo">2022</option>
+                    <option value="saab">2021</option>
+                    <option value="mercedes">2020</option>
+                    <option value="audi">2019</option>
+                </select>
+                
+                <label>Quantity: <input type="number"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend><input type="checkbox" name="service2" value="carkey">Make copies of a Door key</legend>
+                <label for="">Door key type:  <input type="text" name="address"></label>
+                <label>Quantity: <input type="number"></label>                
+            </fieldset>
+
+            <input type="submit" value="Place the order">
+
+        </section>  
+        
+        <section>
+            <h3>Your OLD orders</h3>
+            <table>
+                <thead>
+                    <tr><th>ID</th> <th>Date</th> <th>Items</th> <th>Total cost</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>2022/12/29</td><td>Car key, Home key</td><td>250</td></tr>
+                    <tr><td>2</td><td>2022/11/25</td><td>Unlock service, Home key</td><td>150</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>generateFooter();</script>
+</body>
+</html>
